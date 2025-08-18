@@ -36,7 +36,12 @@ test_that("excess box sizes are ignored", {
   expect_identical(lacunarity(a, box_sizes = 1:3), lacunarity(a, box_sizes = 1:5))
 })
 
-test_that("lacunarity values are accurate", {
+test_that("fixed boundary lacunarity values are accurate", {
   lac <- lacunarity(array(data = c(0,1), dim = c(5,5,5)), box_sizes = "all")
   expect_equal(lac$lacunarity, c(125/62, 1, 132678/132496, 1, 1))
+})
+
+test_that("periodic boundary lacunarity values are accurate", {
+  lac <- lacunarity(array(data = c(0,1), dim = c(5,5,5)), box_sizes = "all", periodic = TRUE)
+  expect_equal(lac$lacunarity, c(7750/3844, 248000/246016, 2806000/2802276, 15760000/15745024, 1))
 })

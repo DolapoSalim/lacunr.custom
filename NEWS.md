@@ -1,5 +1,12 @@
 # lacunr 1.0.1.9000 (development version)
 
+## Improvements:
+
+* The tutorial vignette `lacunr-tutorial.Rmd` has been edited to clarify the relationship between raw lacunarity and the proportion of occupied space.
+* External package anchors have been added to function documentation, per CRAN guidelines.
+* The test suite now covers the periodic boundary algorithm.
+* Fixed broken URLs.
+
 # lacunr 1.0.1 (Release date: 2024-06-03)
 
 ## New features:

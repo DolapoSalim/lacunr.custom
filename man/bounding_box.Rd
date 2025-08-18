@@ -12,7 +12,7 @@ bounding_box(x, threshold = 0, edge_length = NULL)
 \arguments{
 \item{x}{A '\code{lac_voxels}' object created by \code{\link[=voxelize]{voxelize()}} (preferred), or a
 '\code{lasmetrics3d}' object created by \code{\link[lidR:aggregate]{lidR::voxel_metrics()}}. Users can
-alternatively supply a \code{\link[=data.table]{data.table}} containing X, Y, Z,
+alternatively supply a \code{\link[data.table:data.table]{data.table::data.table()}} containing X, Y, Z,
 and N columns, in which case the argument \code{edge_length} is required.}
 
 \item{threshold}{An integer specifying the minimum number of points to use

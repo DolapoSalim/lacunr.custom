@@ -7,7 +7,7 @@
 voxelize(x, edge_length, threads = 1L)
 }
 \arguments{
-\item{x}{A \code{\link[=data.frame]{data.frame}} or \code{\link[=data.table]{data.table}}
+\item{x}{A \code{\link[=data.frame]{data.frame}} or \code{\link[data.table:data.table]{data.table::data.table()}}
 with columns containing the X, Y, and Z coordinates of every point. Any
 additional columns are ignored.}
 
@@ -19,7 +19,7 @@ Default is 1.}
 }
 \value{
 A data object of class '\code{lac_voxels}', which inherits from
-\code{\link[=data.table]{data.table}}. The output contains 4 columns: X, Y, Z, and
+\code{\link[data.table:data.table]{data.table::data.table()}}. The output contains 4 columns: X, Y, Z, and
 N. The first three columns encode the spatial coordinates of each voxel
 while the fourth denotes the total number of points they contain.
 }

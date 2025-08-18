@@ -18,7 +18,7 @@
 #'
 #' @param x A '`lac_voxels`' object created by [`voxelize()`] (preferred), or a
 #'   '`lasmetrics3d`' object created by [`lidR::voxel_metrics()`]. Users can
-#'   alternatively supply a [`data.table`][`data.table()`] containing X, Y, Z,
+#'   alternatively supply a [`data.table::data.table()`] containing X, Y, Z,
 #'   and N columns, in which case the argument `edge_length` is required.
 #' @param edge_length a numeric vector of length 3, specifying the X, Y, and Z
 #'   dimensions of each voxel. This argument should only be necessary when

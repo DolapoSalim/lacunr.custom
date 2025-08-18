@@ -7,7 +7,7 @@
 #'
 #' Bins point cloud data into 3D pixels, otherwise known as 'voxels'.
 #'
-#' @param x A [`data.frame`][data.frame()] or [`data.table`][`data.table()`]
+#' @param x A [`data.frame`][data.frame()] or [`data.table::data.table()`]
 #'   with columns containing the X, Y, and Z coordinates of every point. Any
 #'   additional columns are ignored.
 #' @param edge_length A numeric [`vector`][vector()] of length `3`, containing
@@ -16,7 +16,7 @@
 #'   Default is 1.
 #'
 #' @return A data object of class '`lac_voxels`', which inherits from
-#'   [`data.table`][`data.table()`]. The output contains 4 columns: X, Y, Z, and
+#'   [`data.table::data.table()`]. The output contains 4 columns: X, Y, Z, and
 #'   N. The first three columns encode the spatial coordinates of each voxel
 #'   while the fourth denotes the total number of points they contain.
 #' @export

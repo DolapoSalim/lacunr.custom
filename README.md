@@ -81,10 +81,11 @@ vox <- voxelize(las@data, edge_length = c(0.5, 0.5, 0.5))
 ### Voxelization using `lidR`
 
 `lidR` offers its own extremely versatile voxelization function,
-[`voxel_metrics()`](https://r-lidar.github.io/lidRbook/vba.html). This
-provides a useful alternative to `voxelize()`, although it is important
-to note that both functions utilize different algorithms and will not
-produce identical results (see the following section for more details).
+[`voxel_metrics()`](https://r-lidar.github.io/lidRbook/voxel_metrics.html).
+This provides a useful alternative to `voxelize()`, although it is
+important to note that both functions utilize different algorithms and
+will not produce identical results (see the following section for more
+details).
 
 `voxel_metrics()` returns a `lasmetrics3d` object. `lacunr`’s
 `bounding_box()` function can accept this as an input, but it also
