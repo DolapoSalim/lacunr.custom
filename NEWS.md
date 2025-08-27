@@ -6,6 +6,7 @@
 * External package anchors have been added to function documentation, per CRAN guidelines.
 * The test suite now covers the periodic boundary algorithm.
 * Fixed broken URLs.
+* Package now has a `CITATION` file.
 
 # lacunr 1.0.1 (Release date: 2024-06-03)
 

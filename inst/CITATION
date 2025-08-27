@@ -1,0 +1,11 @@
+bibentry(
+  bibtype  = "Article",
+  title    = "lacunr: Efficient 3D lacunarity for voxelized LiDAR data from forested ecosystems",
+  author   = "Elliott A. Smeds, Zane Cooper, Lisa Patrick Bentley",
+  journal  = "Methods in Ecology and Evolution",
+  year     = "2025",
+  volume   = "16",
+  number   = "9",
+  pages    = "1906–1913",
+  doi      = "10.1111/2041-210x.70126"
+)
