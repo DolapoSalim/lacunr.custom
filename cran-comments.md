@@ -1,13 +1,9 @@
-## Resubmission
+## CRAN Check fixes
 
-This is a resubmission. In this version I have:
+This patch fixes the following issue flagged by CRAN Check results:
 
-* Removed unnecessary spaces preceding line breaks in the 'Description' field of DESCRIPTION.
-
-* Added lines to reset par() in package vignette -> inst/doc/lacunr-tutorial.R
+* External package anchors have been added to all Rd \link{} targets, per updated CRAN requirements.
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
-
-* This is a new release.
+0 errors | 0 warnings | 0 notes
