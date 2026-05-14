@@ -1,4 +1,4 @@
-Package: lacunr
+Package: lacunr.custom
 Type: Package
 Title: Fast 3D Lacunarity for Voxel Data
 Version: 1.0.2
