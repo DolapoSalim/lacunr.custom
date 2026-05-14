@@ -9,6 +9,10 @@
     .Call(`_lacunr_gliding_box_periodic`, C, box_sizes)
 }
 
+.gliding_box_massdist <- function(C, box_sizes) {
+    .Call(`_lacunr_gliding_box_massdist`, C, box_sizes)
+}
+
 .voxelize_C <- function(pc, edge_length, threads = 1L) {
     .Call(`_lacunr_voxelization_rcpp`, pc, edge_length, threads)
 }
