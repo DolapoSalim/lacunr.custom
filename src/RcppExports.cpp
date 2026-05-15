@@ -14,7 +14,7 @@ Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 
 // gliding_box
 DataFrame gliding_box(arma::ucube C, IntegerVector box_sizes);
-RcppExport SEXP _lacunr_gliding_box(SEXP CSEXP, SEXP box_sizesSEXP) {
+RcppExport SEXP _lacunr_custom_gliding_box(SEXP CSEXP, SEXP box_sizesSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -26,7 +26,7 @@ END_RCPP
 }
 // gliding_box_periodic
 DataFrame gliding_box_periodic(arma::ucube C, IntegerVector box_sizes);
-RcppExport SEXP _lacunr_gliding_box_periodic(SEXP CSEXP, SEXP box_sizesSEXP) {
+RcppExport SEXP _lacunr_custom_gliding_box_periodic(SEXP CSEXP, SEXP box_sizesSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -38,7 +38,7 @@ END_RCPP
 }
 // gliding_box_massdist
 Rcpp::List gliding_box_massdist(arma::ucube C, IntegerVector box_sizes);
-RcppExport SEXP _lacunr_gliding_box_massdist(SEXP CSEXP, SEXP box_sizesSEXP) {
+RcppExport SEXP _lacunr_custom_gliding_box_massdist(SEXP CSEXP, SEXP box_sizesSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -50,7 +50,7 @@ END_RCPP
 }
 // voxelization_rcpp
 arma::mat voxelization_rcpp(arma::mat pc, arma::vec edge_length, int threads);
-RcppExport SEXP _lacunr_voxelization_rcpp(SEXP pcSEXP, SEXP edge_lengthSEXP, SEXP threadsSEXP) {
+RcppExport SEXP _lacunr_custom_voxelization_rcpp(SEXP pcSEXP, SEXP edge_lengthSEXP, SEXP threadsSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -63,14 +63,14 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_lacunr_gliding_box", (DL_FUNC) &_lacunr_gliding_box, 2},
-    {"_lacunr_gliding_box_periodic", (DL_FUNC) &_lacunr_gliding_box_periodic, 2},
-    {"_lacunr_gliding_box_massdist", (DL_FUNC) &_lacunr_gliding_box_massdist, 2},
-    {"_lacunr_voxelization_rcpp", (DL_FUNC) &_lacunr_voxelization_rcpp, 3},
+    {"_lacunr_custom_gliding_box", (DL_FUNC) &_lacunr_custom_gliding_box, 2},
+    {"_lacunr_custom_gliding_box_periodic", (DL_FUNC) &_lacunr_custom_gliding_box_periodic, 2},
+    {"_lacunr_custom_gliding_box_massdist", (DL_FUNC) &_lacunr_custom_gliding_box_massdist, 2},
+    {"_lacunr_custom_voxelization_rcpp", (DL_FUNC) &_lacunr_custom_voxelization_rcpp, 3},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_lacunr(DllInfo *dll) {
+RcppExport void R_init_lacunr_custom(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }
